@@ -1063,15 +1063,7 @@ h1{
     }
    
 }
-@media (max-width:500px){
-    .contact .row .content .info{
-        margin-left:50px;
-     }
-     .contact .row .content .title{
-        margin-left:50px;
-     }
-     
-}
+
  
 
 /* with responsive  */
