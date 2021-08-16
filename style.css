@@ -455,6 +455,7 @@ header .search-bar-container label:hover{
     color:#222;
     
 }
+
 .hire{
     margin-left:20px;
 } 
@@ -464,6 +465,10 @@ header .search-bar-container label:hover{
 @media (max-width:450px){
     .about .row .counter .box{
         width:100%;
+    }
+    .about .row .counter .box p{
+      color:black;
+      font-size:2rem;
     }
    
 }
@@ -991,6 +996,7 @@ h1{
     align-items:center;
     justify-content:center;
     flex-wrap:wrap;
+     margin-top:50px;
 
 }
 .contact .row .content{
