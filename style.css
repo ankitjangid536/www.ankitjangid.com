@@ -191,7 +191,7 @@ header .search-bar-container label:hover{
 }
 .login-form-container .form .user-input{
     width:320px;
-    height:55px;
+    height:50px;
     margin-bottom:30px;
     outline:none;
     border:none;
@@ -239,7 +239,7 @@ header .search-bar-container label:hover{
      border:none;
      width:320px;
 
-     height:55px;
+     height:50px;
      background:#4285f4;
      color:#222;
      letter-spacing:1px;
