@@ -279,7 +279,30 @@ header .search-bar-container label:hover{
 }
 
 /* with responsive  */
+@media screen and (max-width:450px){
+    .login-form-container .container{
+        /* width: 95%; */
+        height:550px;
+        
+    }
+    .login-form-container form button{
+        margin-top:50px;
+    }
+    .login-form-container #Form1{
+        margin-top:40px;
+    }
+    .login-form-container #Form2{
+        margin-top:40px;
+    }
+    .login-form-container #Form3{
+        margin-top:40px;
+    }
+    .login-form-container .step-col small{
+        font-size:10px;
+    }
+  
 
+}
 
 /* with responsive  */
 /* //////////////////////// */
