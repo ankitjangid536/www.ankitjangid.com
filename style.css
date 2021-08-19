@@ -162,7 +162,7 @@ header .search-bar-container label:hover{
     z-index:10000;
     min-height:100vh;
     width:100%;
-    background:black;
+    background:rgba(0,0,0,0.7);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -170,98 +170,102 @@ header .search-bar-container label:hover{
 .login-form-container.active{
     top:0;
 }
-
-.login-form-container .form{
-    z-index:1;
-    font-family: 'Poppins', sans-serif;
-    position:absolute;
-    width:320px;
-    text-align:center;
- 
-}
-.login-form-container .form i{
-    z-index:1;
-    background-color:#ccc;
-    border-radius:50%;
-    font-size:65px;
-    margin-bottom:30px;
-}
-.login-form-container .form .signup-form{
-    display:none;
-}
-.login-form-container .form .user-input{
-    width:320px;
-    height:50px;
-    margin-bottom:30px;
-    outline:none;
-    border:none;
-    background:rgb(252, 252, 252);
-    color:rgb(0, 0, 0);
-    font-size:18px;
-    text-align:center;
+.login-form-container .container{
+    width:360px;
+    height:450px;
+    margin:8% auto;
+    background:#fff;
     border-radius:5px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.login-form-container h3{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:bolder;
+    color:#777;
+    font-size:20px;
+
+}
+.login-form-container .container form{
+    width:280px;
+    position:absolute;
+    top:100px;
+    left:40px;
     transition:0.5s;
-    transition-property: border-left, border-right, box-shadow;
 }
-.login-form-container .form .user-input:hover, .form .user-input:focus, .form .user-input:active{
-    border-left:8px solid orange;
-    border-right:8px solid orange;
-    box-shadow:0 0 100px orange;
+.login-form-container form input{
+    width:100%;
+    padding:10px 5px;
+    margin:5px 0;
+    border:0;
+    border-bottom:1px solid #999;
+    outline:none;
+    
 }
-.login-form-container .form .option-01{
-     margin-bottom:50px
- }
- .login-form-container .form .option-01 input{
-     width:15px;
-     height:15px;
-     margin-right:5px;
- }
- .login-form-container .form .option-01 .remember-me{
-     color:#fff;
-     font-size:14px;
-     display:flex;
-     align-items:center;
-     float:left;
-     cursor:pointer;
- }
- .login-form-container .form .option-01 a{
-     color: #fff;
-     font-size:14px;
-     font-style:italic;
-     float:right;
+.login-form-container ::placeholder{
+    color:#777; 
+}
+.login-form-container .btn-box{
+    width:100%;
+    margin:30px auto;
+    text-align:center;
+}
+.login-form-container form button{
+    width:110px;
+    height:35px;
+    margin:0 10px;
+    background:orange;
+    border-radius:30px;
+    border:none;
+    outline:none;
+    color:#fff;
+    cursor:pointer;
 
- }
- .login-form-container .form .option-01 a:hover{
-     color:orange;
- }
- .login-form-container .form .btn{
-     outline:none;
-     border:none;
-     width:320px;
+}
+.login-form-container #Form2{
+    left:450px;
+}
+.login-form-container #Form3{
+    left:-450px;
+}
+.login-form-container .step-row{
+    width:360px;
+    height:40px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    box-shadow:0 -1px 5px -1px #000;
+    
+    position:relative;
 
-     height:50px;
-     background:#4285f4;
-     color:#222;
-     letter-spacing:1px;
-     border-radius:5px;
-     cursor:pointer;
-     transition:0.5s;
-     transition-property:border-left, border-right, box-shadow;
- }
- .login-form-container .form .btn:hover{
-     border-left:8px solid #fff;
-     border-right:8px solid#fff;
-     box-shadow:0 0 100px #fff;
- }
- .login-form-container .form .option-02{
-     color:#fff;
-     font-size:14px;
-     margin-top:30px
- }
- .login-form-container .form .option-02 a{
-     color:#4285f4;
-     font-weight:bolder;
- }
+}
+.login-form-container .step-col{
+    width:120px;
+    text-align:center;
+    color:#333;
+    position:relative;
+}
+.login-form-container #progress{
+    position:absolute;
+    height:100%;
+    width:120px;
+    transition:1s;
+    background:orange;
+}
+.login-form-container #progress::after{
+    content:'';
+    height:0;
+    width:0;
+    border-top:20px solid transparent;
+    position:absolute;
+    border-bottom:20px solid transparent;
+    right:-20px;
+    top:0;
+    border-left:20px solid #ffad06;
+}
 
 
 .login-form-container #form-close{
@@ -276,16 +280,17 @@ header .search-bar-container label:hover{
 
 /* with responsive  */
 
-@media screen and (max-width:500px){
-    .login-form-container .form{
+@media screen and (max-width:450px){
+    .login-form-container .container{
         width: 95%;
     }
-    .login-form-container .form .user-input{
+    .login-form-container .step-row{
         width:100%;
     }
-    .login-form-container .form .btn{
-        width:100%;
+    .login-form-container form button{
+        
     }
+
 }
 
 /* with responsive  */
