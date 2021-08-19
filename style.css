@@ -280,18 +280,6 @@ header .search-bar-container label:hover{
 
 /* with responsive  */
 
-@media screen and (max-width:450px){
-    .login-form-container .container{
-        width: 95%;
-    }
-    .login-form-container .step-row{
-        width:100%;
-    }
-    .login-form-container form button{
-        
-    }
-
-}
 
 /* with responsive  */
 /* //////////////////////// */
