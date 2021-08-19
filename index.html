@@ -50,37 +50,46 @@
 
 
 
-    <div class="login-form-container">
+  <div class="login-form-container">
         <i class="fas fa-times" id="form-close"></i>
-        <div class="form">
-            <form class="login-form" action="" method="post">
+        <div class="container">
+            <form id="Form1">
+                <h3>CREATE ACCOUNT</h3>
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                 <div class="btn-box">
+                     <button type="button" id="Next1">Next</button>
+                 </div>
+             </form>
+             <form id="Form2">
+                 <h3>SOCIAL LINKS</h3>
+                 <input type="text" placeholder="Medium">
+                 <input type="text" placeholder="Github">
+                 <input type="text" placeholder="Linkedin">
+                  <div class="btn-box">
+                      <button type="button" id="Back1">Back</button>
+                      <button type="button" id="Next2">Next</button>
+                  </div>
+              </form>
+              <form id="Form3">
+                 <h3>PERSONAL INFO</h3>
+                 <input type="text" placeholder="First Name">
+                 <input type="text" placeholder="Last Name">
+                 <input type="text" placeholder="Mobile No.">
+                  <div class="btn-box">
+                      <button type="button" id="Back2">Back</button>
+                      <button type="submit" id="Next3">Submit</button>
+                  </div>
+                 </form>
+                  <div class="step-row">
+                      <div id="progress"></div>
+                      <div class="step-col"><small>Step 1</small></div>
+                      <div class="step-col"><small>Step 2</small></div>
+                      <div class="step-col"><small>Step 3</small></div>
+                  </div>
               
-             
-                <input type="text" class="user-input" name="" placeholder="Username" required>
-                <input type="password" class="user-input" name="" placeholder="Password" required>
-                <div class="option-01">
-                    <label class="remember-me"><input type="checkbox" name="">Remember me</label>
-                    <a href="#">Forgot your password?</a>
-                </div>
-                <input type="submit" class="btn" value="LOGIN">
-                <div class="option-02">
-                    <p>Not Registered? <a href="#">Create an Account</a></p>
-                </div>
-            </form>
-
-
-
-            <form action="" method="post" class="signup-form">
-  
-                <input type="text" class="user-input" name="" placeholder="Username" required>
-                <input type="email" class="user-input" name="" placeholder="Email Address" required>
-                <input type="password" class="user-input" name="" placeholder="Password" required>
-                <input type="submit" class="btn" value="REGISTER">
-                <div class="option-02">
-                    <p>Already Registered? <a href="#">Sign In</a></p>
-                </div>
-            </form>
-        </div>
+        </div> 
     </div>
     <!-- login form  -->
 
