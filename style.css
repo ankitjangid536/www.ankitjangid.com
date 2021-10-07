@@ -948,6 +948,82 @@ h1{
 }
 /* with responsive  */
 
+
+.container{
+    /* background:#222; */
+    /* margin-top:100px; */
+    /* height:100vh; */
+    }
+    .container .heading{
+        color:orange;
+        font-size:5rem;
+        padding:2trem 0;
+        text-align:center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow:0 .5rem 1rem orange;
+        margin-bottom:50px;
+        /* color:#fff; */
+    }
+    .container .music-container{
+        display:flex;
+        align-items:center;
+        flex-flow:column;
+    }
+    .container .music-container .box{
+        height:20rem;
+        width:80%;
+        display:flex;
+        align-items:center;
+        background:#f9f9f9;
+        border-radius:1rem;
+        box-shadow:0 .5rem 1rem #000;
+        overflow:hidden;
+    }
+    .container .music-container .box .image{
+        height:100%;
+        width:25%;
+    }
+    .container .music-container .box .image img{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+    }
+   
+
+    @media (max-width:600px){
+        .container .music-container .box{
+            height:55rem;
+            width:100%;
+            flex-flow:column;
+        }
+        .container .music-container .box .image{
+            height:80%;
+            width:100%;
+        }
+        .container .music-container .box .music{
+            height:20%;
+            width:100%;
+        }
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #social{
     /* background-color:black; */
 }
